@@ -1,0 +1,172 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.card{
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(190, 156, 156);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+}
+
+.card .card-image{
+  margin-top: 10%;
+  max-width: 60%;
+  height:auto;
+  border-radius: 10%;
+  margin-bottom: 10px;
+  transform: scale(3);
+}
+
+.welcome-message{
+  color: gold;
+  text-align: center;
+}
+
+.login-promp{
+  color: red;
+  text-align: center;
+}
+
+.color-div{
+  height: 250px;
+  width: 250px;
+  border-radius: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px white solid;
+  margin-bottom: 25px;
+  transition: 0.25s ease;
+}
+.color-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;  
+}
+.color-changer{
+  border: none;
+}
+.count-div{
+  padding: 10px;
+  text-align: center;
+}
+.count-div button{
+  margin-left: 10px;
+}
+
+.to-do-list{
+  text-align: center;
+}
+
+
+.to-do-input{
+  color: rgb(0, 0, 0);
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+  height: 20px;
+  font-size: large;
+}
+
+.to-do-button{
+  color: white;
+  background-color: rgb(102, 148, 10);
+}
+
+.to-do-ul{
+  list-style-type: none;
+}
+
+.to-do-li{
+  background-color: white;
+  max-width: 500px;
+  font-size: 22px;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left:50px;
+  padding-right:50px;
+  border-radius: 10px;
+}
+
+.to-do-delete{
+  font-size: smaller;
+  background-color: red;
+  width: 80px;
+  height: 40px;
+  margin-left: 40px;
+}
+.to-do-up{
+  font-size: smaller;
+  background-color: rgb(0, 102, 255);
+  width: 40px;
+  height: 40px;
+}
+.to-do-down{
+  font-size: smaller;
+  background-color: rgb(0, 102, 255);
+  width: 40px;
+  height: 40px;
+}
+
+.to-do-div button{
+  margin-right: 5px;
+}
+
+li .text{
+  flex: 1;
+}
